@@ -109,6 +109,10 @@ const SingleProductPage = () => {
                 description === "description-5" &&
                 <>{t('product-description-5')}</>
               }
+              {
+                description === "description-6" &&
+                <>{t('product-description-6')}</>
+              }
             </p>
             <p className="info">
               <span>{t('product-span-text1')}</span>
