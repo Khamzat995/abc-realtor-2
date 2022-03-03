@@ -38,7 +38,7 @@ const SingleProductPage = () => {
   }, [error]);
 
   useEffect(() => {
-  fetchSingleProduct(id);
+    fetchSingleProduct(id);
   }, [id]);
   if (loading) {
     return <Loading />;
@@ -105,6 +105,10 @@ const SingleProductPage = () => {
                 description === "description-4" &&
                 <>{t('product-description-4')}</>
               }
+              {
+                description === "description-5" &&
+                <>{t('product-description-5')}</>
+              }
             </p>
             <p className="info">
               <span>{t('product-span-text1')}</span>
@@ -114,33 +118,33 @@ const SingleProductPage = () => {
               <span>{t('product-span-text4')}</span>
               {district}
             </p>
-            { category === "квартиры" &&
-            <p className="info">
-              <span>{t('product-span-text5')}</span>
-              {company}
-            </p>
+            {category === "квартиры" &&
+              <p className="info">
+                <span>{t('product-span-text5')}</span>
+                {company}
+              </p>
             }
-            { category === "дома" &&
-            <p className="info">
-              <span>{t('product-span-text5')}</span>
-              {company}
-            </p>
+            {category === "дома" &&
+              <p className="info">
+                <span>{t('product-span-text5')}</span>
+                {company}
+              </p>
             }
             <p className="info">
               <span>{t('product-span-text6')}</span>
               {footage}{" "} м²
             </p>
             {category === "дома" &&
-            <p className="info">
-              <span className="floor">{t('product-span-text7')}</span>
-             <p className="floorTwo">{floor}</p>
-            </p>
+              <p className="info">
+                <span className="floor">{t('product-span-text7')}</span>
+                <p className="floorTwo">{floor}</p>
+              </p>
             }
             {category === "квартиры" &&
-            <p className="info">
-              <span className="floor">{t('product-span-text7')}</span>
-              <p className="floorTwo">{floor}</p>
-            </p>
+              <p className="info">
+                <span className="floor">{t('product-span-text7')}</span>
+                <p className="floorTwo">{floor}</p>
+              </p>
             }
             <p className="info-1">
               <span className="floor-1">{t('product-span-text8')}{" "}</span>
@@ -150,7 +154,7 @@ const SingleProductPage = () => {
             <hr />
             {stock > 0 && <AddToCart product={product} />}
             {stock === 0 &&
-              <Link to="/products" className="btn" style={{marginLeft: "30%", marginTop: "20px"}}>
+              <Link to="/products" className="btn" style={{ marginLeft: "30%", marginTop: "20px" }}>
                 {t('product-stock-btn')}
               </Link>
             }
@@ -160,14 +164,14 @@ const SingleProductPage = () => {
         <h3>{t('product-stock-btn1')}</h3>
         <div className="prefix">
           <ScrollToTop />
-            {
-              newProducts.slice(0, 6).map((product) => {
-                return product.company === product.company
-                  ?
-                  <div className="products" >
-                  <Product key={product._id} {...product} />  </div>: null
-              })
-            }
+          {
+            newProducts.slice(0, 6).map((product) => {
+              return product.company === product.company
+                ?
+                <div className="products" >
+                  <Product key={product._id} {...product} />  </div> : null
+            })
+          }
         </div>
       </div>
     </Wrapper>
@@ -175,17 +179,21 @@ const SingleProductPage = () => {
 };
 
 const Wrapper = styled.main`
-  .btn:hover{
+  .btn:hover {
     transform: scale(1.1);
   }
+
   .product-center {
     display: grid;
     gap: 4rem;
     margin-top: 2rem;
+    padding: 5px;
   }
+
   h3 {
     text-transform: none;
   }
+
   .prefix {
     max-width: 1200px;
     height: auto;
@@ -193,49 +201,60 @@ const Wrapper = styled.main`
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   .products {
     width: 350px;
     margin: 5px;
   }
+
   .products img {
     height: 250px;
   }
+
   .floor {
     width: 150px;
     height: 24px;
   }
+
   .floor-1 {
     width: auto;
   }
+
   .fa-phone {
     padding-right: 10px;
     padding-left: 10px;
   }
+
   .floorTwo {
     padding-left: 20px;
   }
+
   .price {
     color: var(--clr-primary-4);
   }
+
   .desc {
     line-height: 2;
     max-width: 45em;
   }
+
   .info {
     text-transform: none;
     width: 400px;
     height: 24px;
     display: grid;
     grid-template-columns: 125px 1fr;
+
     span {
       font-weight: 700;
     }
-    }
-    
-    h5 {
-      color: red;
-      text-transform: uppercase;
-    }
+  }
+
+  h5 {
+    color: red;
+    text-transform: uppercase;
+  }
+
   .info-1 {
     width: 100%;
     display: flex;
@@ -252,22 +271,24 @@ const Wrapper = styled.main`
     display: flex;
     justify-content: space-between;
   }
+
   .btn {
     width: 200px;
     height: 54px;
   }
-  
+
 
   @media (min-width: 992px) {
     .product-center {
       grid-template-columns: 1fr 1fr;
       align-items: center;
     }
+
     .price {
       font-size: 1.25rem;
     }
   }
-  
+
 
 `;
 
