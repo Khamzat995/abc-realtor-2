@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useProductsContext } from "../context/products_context";
 import { useCartContext } from "../context/cart_context";
-import LangTransOne from './LangTransOne';
 import { useTranslation } from 'react-i18next';
 
 const CartButtons = () => {
@@ -21,7 +20,6 @@ const CartButtons = () => {
           <span className="cart-value">{total_items}</span>
         </span>
       </Link>
-      <LangTransOne />
     </Wrapper>
   );
 };

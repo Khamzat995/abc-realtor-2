@@ -114,6 +114,7 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: 30px; 
 }
 .dropdown {
   position: fixed;

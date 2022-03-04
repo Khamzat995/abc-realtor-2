@@ -9,6 +9,7 @@ import { useProductsContext } from "../context/products_context";
 import { useUserContext } from "../context/user_context";
 import flagOne from '../assets/Icons/flagOne.jpg';
 import { useTranslation } from 'react-i18next';
+import LangTransOne from "./LangTransOne";
 
 
 const Nav = () => {
@@ -22,14 +23,15 @@ const Nav = () => {
           <Link to="/">
             <img src={Logo_expertRed} alt="logo" />
           </Link>
+          <LangTransOne />
           <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
           </button>
         </div>
         <ul className="nav-links">
-          <div className="nav-phone" style={{ display: 'flex', alignItems: 'flex-end'}}>
-            <img className="icon-item" src={flagOne} alt='icons' style={{width: '40px'}}/>
-            <h5 className="fas fa-phone" style={{paddingLeft: '5px',  color: 'var(--clr-grey-3)' }}> {" "}+90 552 286 8989</h5>
+          <div className="nav-phone" style={{ display: 'flex', alignItems: 'flex-end' }}>
+            <img className="icon-item" src={flagOne} alt='icons' style={{ width: '40px' }} />
+            <h5 className="fas fa-phone" style={{ paddingLeft: '5px', color: 'var(--clr-grey-3)' }}> {" "}+90 552 286 8989</h5>
           </div>
           {links.map((link) => {
             const { id, text, url } = link;
