@@ -107,7 +107,6 @@ const NavContainer = styled.nav`
     .nav-phone {
       width: 230px;
       display: flex;
-      margin-left: 30px;
       align-items: flex-end;
       h5 {
         color: var(--clr-grey-3);
