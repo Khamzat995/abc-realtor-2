@@ -256,7 +256,7 @@ const Wrapper = styled.main`
 
   h5 {
     color: red;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
   .info-1 {
@@ -291,6 +291,7 @@ const Wrapper = styled.main`
     .price {
       font-size: 1.25rem;
     }
+    
   }
 
 
