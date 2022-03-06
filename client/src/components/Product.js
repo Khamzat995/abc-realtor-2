@@ -29,15 +29,27 @@ const Product = ({ images, name, category, company, footage, price, _id }) => {
             }
 
           </h5>
-          { category === "дома" &&
-          <i className="fa fa-bed" aria-hidden="true">{" "}{company}</i>
-          }
-          { category === "квартиры" &&
-          <i className="fa fa-bed" aria-hidden="true">{" "}{company}</i>
-          }
-          { category === "земля" &&
-          <p aria-hidden="true">{footage}{" "}м² </p>
-          }
+          <div>
+            {category === "дома" &&
+              <i className="fa fa-bed" aria-hidden="true">{" "}{company}</i>
+            }
+            {category === "квартиры" &&
+              <i className="fa fa-bed" aria-hidden="true">{" "}{company}</i>
+            }
+
+          </div>
+          <div>
+            {category === "дома" &&
+              <i className="fa fa-cube" aria-hidden="true"> {footage}{" "}м² </i>
+            }
+            {category === "квартиры" &&
+              <i className="fa fa-cube" aria-hidden="true"> {footage}{" "}м² </i>
+            }
+            {category === "земля" &&
+              <i className="fa fa-cube" aria-hidden="true"> {footage}{" "}м² </i>
+            }
+          </div>
+
           <p>{formatPrice(price)}</p>
         </footer>
       </Link>
