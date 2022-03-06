@@ -14,42 +14,42 @@ const Contact = () => {
     <Wrapper>
       <div className="section-center">
         <ScrollAnimation animateIn='bounce'
-                         initiallyVisible={true}
-                         animateOnce={true}>
-        <h4>{t('contact-title')}</h4>
+          initiallyVisible={true}
+          animateOnce={true}>
+          <h4>{t('contact-title')}</h4>
         </ScrollAnimation>
-          <div className="content">
+        <div className="content">
           <div>
             <p> {t('contact-text-1')}
-               <ScrollAnimation delay={1000} animateIn='tada' initiallyVisible={true}> <i className="fas fa-phone">{" "}+90 552 286 8989</i> .
+              <ScrollAnimation delay={1000} animateIn='tada' initiallyVisible={true}> <i className="fas fa-phone">{" "}+90 552 286 8989, +90 552 592 9191 </i> .
               </ScrollAnimation>{t('contact-text-2')}
             </p>
             <span className='contacts_item'>
-               <ScrollAnimation animateIn='bounce' delay={1000}
-                                initiallyVisible={true}
-                                animateOnce={true}>
+              <ScrollAnimation animateIn='bounce' delay={1000}
+                initiallyVisible={true}
+                animateOnce={true}>
 
-                <img src={WhatsApp}  alt='icons'/>
-               </ScrollAnimation>
-              <ScrollAnimation animateIn='bounce'  delay={1100}
-                               initiallyVisible={true}
-                               animateOnce={true}>
+                <img src={WhatsApp} alt='icons' />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn='bounce' delay={1100}
+                initiallyVisible={true}
+                animateOnce={true}>
 
-                <img src={ok}  alt='icons'/>
+                <img src={ok} alt='icons' />
               </ScrollAnimation>
               <ScrollAnimation animateIn='bounce' delay={1200}
-                               initiallyVisible={true}
-                               animateOnce={true}>
+                initiallyVisible={true}
+                animateOnce={true}>
 
-                <img src={Gmail} alt='icons'/>
+                <img src={Gmail} alt='icons' />
               </ScrollAnimation>
               <ScrollAnimation animateIn='bounce' delay={1300}
-                               initiallyVisible={true}
-                               animateOnce={true}>
+                initiallyVisible={true}
+                animateOnce={true}>
 
-                <img src={telegram} alt='icons'/>
+                <img src={telegram} alt='icons' />
               </ScrollAnimation>
-              </span>
+            </span>
           </div>
           <form className="contact-form">
             <input

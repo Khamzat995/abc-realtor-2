@@ -13,20 +13,20 @@ function ContactAbout() {
         <div className="box-container">
           <div className="box" data-aos="fade-right">
             <ScrollAnimation animateIn='bounce'
-                             initiallyVisible={true}
-                             animateOnce={true}>
-            <h4>{t('contact-about-1')}</h4>
+              initiallyVisible={true}
+              animateOnce={true}>
+              <h4>{t('contact-about-1')}</h4>
             </ScrollAnimation>
-            <Link to="#"> <i className="fas fa-map-marker-alt"/>{t('contact-about-text-1')} </Link>
-            <Link to="#"> <i className="fas fa-map-marker-alt"/>{t('contact-about-text-2')} </Link>
-            <Link to="#"> <i className="fas fa-map-marker-alt"/>{t('contact-about-text-3')} </Link>
-            <Link to="#"> <i className="fas fa-map-marker-alt"/>{t('contact-about-text-4')} </Link>
+            <Link to="#"> <i className="fas fa-map-marker-alt" />{t('contact-about-text-1')} </Link>
+            <Link to="#"> <i className="fas fa-map-marker-alt" />{t('contact-about-text-2')} </Link>
+            <Link to="#"> <i className="fas fa-map-marker-alt" />{t('contact-about-text-3')} </Link>
+            <Link to="#"> <i className="fas fa-map-marker-alt" />{t('contact-about-text-4')} </Link>
           </div>
           <div className="box" data-aos="fade-down">
             <ScrollAnimation animateIn='bounce'
-                             initiallyVisible={true}
-                             animateOnce={true}>
-            <h4>{t('contact-about-2')}</h4>
+              initiallyVisible={true}
+              animateOnce={true}>
+              <h4>{t('contact-about-2')}</h4>
             </ScrollAnimation>
             <Link to="/">{t('contact-about-text-5')}</Link>
             <Link to="/products">{t('contact-about-text-6')}</Link>
@@ -35,25 +35,25 @@ function ContactAbout() {
           </div>
           <div className="box" data-aos="fade-up">
             <ScrollAnimation animateIn='bounce'
-                             initiallyVisible={true}
-                             animateOnce={true}>
-            <h4>{t('contact-about-3')}</h4>
+              initiallyVisible={true}
+              animateOnce={true}>
+              <h4>{t('contact-about-3')}</h4>
             </ScrollAnimation>
-            <Link to="#"> <i className="fas fa-phone"/> +90 552 286 8989 </Link>
-            <Link to="#"> <i className="fas fa-phone"/> +90 552 286 8989 </Link>
-            <Link to="#"> <i className="fas fa-envelope"/>  istambul-realtor@gmail.com </Link>
-            <Link to="#"> <i className="fas fa-map-marker-alt"/> {t('contact-about-text-9')} - 34520  </Link>
+            <Link to="#"> <i className="fas fa-phone" /> +90 552 286 8989 </Link>
+            <Link to="#"> <i className="fas fa-phone" /> +90 552 592 9191 </Link>
+            <Link to="#"> <i className="fas fa-envelope" />  exp.istambul@gmail.com </Link>
+            <Link to="#"> <i className="fas fa-map-marker-alt" /> {t('contact-about-text-9')} - 34520  </Link>
           </div>
           <div className="box" data-aos="fade-left">
             <ScrollAnimation animateIn='bounce'
-                             initiallyVisible={true}
-                             animateOnce={true}>
-            <h4>{t('contact-about-4')}</h4>
+              initiallyVisible={true}
+              animateOnce={true}>
+              <h4>{t('contact-about-4')}</h4>
             </ScrollAnimation>
-            <Link to="https://www.instagram.com/modern_shop_istanbul_"> <i className="fab fa-instagram"/> instagram </Link>
-            <Link to="#"> <i className="fab fa-telegram"/> telegram </Link>
-            <Link to="#"> <i className="fab fa-facebook-f"/> facebook </Link>
-            <Link to="#"> <i className="fab fa-twitter"/> twitter </Link>
+            <Link to="#"><a href='https://www.instagram.com/p/CZU8v-HLcIm/?utm_medium=share_sheet'></a> <i className="fab fa-instagram" /> instagram </Link>
+            <Link to="#"> <i className="fab fa-telegram" /> telegram </Link>
+            <Link to="#"> <i className="fab fa-facebook-f" /> facebook </Link>
+            <Link to="#"> <i className="fab fa-twitter" /> twitter </Link>
 
           </div>
         </div>
