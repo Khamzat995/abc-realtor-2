@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import { useParams, useHistory, Link } from "react-router-dom";
+/*import { useParams, useHistory, Link } from "react-router-dom";*/
+import { useParams, Link } from "react-router-dom";
 import { useProductsContext } from "../context/products_context";
 import { formatPrice } from "../utils/helpers";
 import {
@@ -18,7 +19,7 @@ import { useTranslation } from 'react-i18next';
 
 const SingleProductPage = () => {
   const { id } = useParams();
-  const history = useHistory();
+  /* const history = useHistory();*/
   const { t } = useTranslation();
 
   const {
@@ -29,13 +30,13 @@ const SingleProductPage = () => {
     fetchSingleProduct,
   } = useProductsContext();
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (error) {
       setTimeout(() => {
         history.push("/");
       }, 2000);
     }
-  }, [error]);
+  }, [error]);*/
 
   useEffect(() => {
     fetchSingleProduct(id);
@@ -60,7 +61,6 @@ const SingleProductPage = () => {
     floor,
     district
   } = product;
-
 
   return (
     <Wrapper>
@@ -116,7 +116,7 @@ const SingleProductPage = () => {
             </p>
             <p className="info">
               <span>{t('product-span-text1')}</span>
-              {stock > 0 ? t('product-span-text2') : <h5> {t('product-span-text3')} </h5>}
+              {stock > 0 ? t('product-span-text2') : <span className="saled"> {t('product-span-text3')} </span>}
             </p>
             <p className="info">
               <span>{t('product-span-text4')}</span>
@@ -173,7 +173,7 @@ const SingleProductPage = () => {
               return product.company === product.company
                 ?
                 <div className="products" >
-                  <Product key={product._id} {...product} />  </div> : null
+                  <Product key={product.id} {...product} />  </div> : null
             })
           }
         </div>
@@ -254,7 +254,7 @@ const Wrapper = styled.main`
     }
   }
 
-  h5 {
+  .saled {
     color: red;
     text-transform: capitalize;
   }
@@ -281,20 +281,15 @@ const Wrapper = styled.main`
     height: 54px;
   }
 
-
   @media (min-width: 992px) {
     .product-center {
       grid-template-columns: 1fr 1fr;
       align-items: center;
     }
-
     .price {
       font-size: 1.25rem;
     }
-    
   }
-
-
 `;
 
 export default SingleProductPage;
