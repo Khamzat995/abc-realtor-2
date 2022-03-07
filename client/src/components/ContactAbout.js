@@ -53,7 +53,7 @@ function ContactAbout() {
             <Link to="#"> <i className="fab fa-instagram" /> instagram </Link>
             <Link to="#"> <i className="fab fa-telegram" /> telegram </Link>
             <Link to="#"> <i className="fab fa-facebook-f" /> facebook </Link>
-            <Link to="#"> <i className="fab fa-twitter" /> twitter </Link>
+            <Link to="#"> <i className="fab fa-whatsapp" /> whatsapp </Link>
 
           </div>
         </div>
