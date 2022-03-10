@@ -322,7 +322,6 @@ const Wrapper = styled.main`
     }
     .info-1 a img {
       margin-right: 10px;
-      height: 30px;
     }
   }
 `;
