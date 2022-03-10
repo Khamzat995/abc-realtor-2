@@ -15,6 +15,8 @@ import styled from "styled-components";
 import ScrollToTop from 'react-scroll-to-top'
 import Product from '../components/Product';
 import { useTranslation } from 'react-i18next';
+import WhatsApp from '../assets/Icons/WhatsApp.png';
+import Insta from '../assets/Icons/insta.png';
 
 
 const SingleProductPage = () => {
@@ -157,18 +159,26 @@ const SingleProductPage = () => {
             {category === "дома" &&
               <p className="info">
                 <span className="floor">{t('product-span-text7')}</span>
-                <p className="floorTwo">{floor}</p>
+                <p className="floor-two">{floor}</p>
               </p>
             }
             {category === "квартиры" &&
               <p className="info">
                 <span className="floor">{t('product-span-text7')}</span>
-                <p className="floorTwo">{floor}</p>
+                <p className="floor-two">{floor}</p>
               </p>
             }
             <p className="info-1">
               <span className="floor-1">{t('product-span-text8')}{" "}</span>
               <p className="fa fa-phone"> {t('product-span-text9')}</p>
+            </p>
+            <p className="info-1">
+              <a href="https://wa.me/905522868989">
+                <img src={WhatsApp} alt='icons' />
+              </a>
+              <a href="https://instagram.com/istanbul_expert/">
+                <img src={Insta} alt='icons' />
+              </a>
             </p>
 
             <hr />
@@ -245,8 +255,13 @@ const Wrapper = styled.main`
     padding-left: 10px;
   }
 
-  .floorTwo {
+  .floor-two {
     padding-left: 20px;
+  }
+
+  .info-1 a img {
+    margin-right: 15px;
+    height: 40px;
   }
 
   .price {
@@ -304,6 +319,10 @@ const Wrapper = styled.main`
     }
     .price {
       font-size: 1.25rem;
+    }
+    .info-1 a img {
+      margin-right: 10px;
+      height: 30px;
     }
   }
 `;

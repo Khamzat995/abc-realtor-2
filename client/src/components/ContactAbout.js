@@ -50,11 +50,11 @@ function ContactAbout() {
               animateOnce={true}>
               <h4>{t('contact-about-4')}</h4>
             </ScrollAnimation>
-            <Link to="#"> <i className="fab fa-instagram" /> instagram </Link>
+            <a href="https://wa.me/905522868989"><i className="fab fa-whatsapp" /> whatsapp </a>
+            <a href="https://instagram.com/istanbul_expert/"><i className="fab fa-instagram" /> instagram </a>
             <Link to="#"> <i className="fab fa-telegram" /> telegram </Link>
             <Link to="#"> <i className="fab fa-facebook-f" /> facebook </Link>
-            <Link to="#"> <i className="fab fa-whatsapp" /> whatsapp </Link>
-
+            
           </div>
         </div>
       </section>

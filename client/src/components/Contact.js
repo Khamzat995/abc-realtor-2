@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import WhatsApp from '../assets/Icons/WhatsApp.png';
-import ok from '../assets/Icons/ok.png';
+import Insta from '../assets/Icons/insta.png';
 import Gmail from '../assets/Icons/Gmail.png';
 import telegram from '../assets/Icons/telegram.png';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -28,14 +28,18 @@ const Contact = () => {
               <ScrollAnimation animateIn='bounce' delay={1000}
                 initiallyVisible={true}
                 animateOnce={true}>
-
-                <img src={WhatsApp} alt='icons' />
+                <a href="https://wa.me/905522868989">
+                  <img src={WhatsApp} alt='icons' />
+                </a>
               </ScrollAnimation>
+
               <ScrollAnimation animateIn='bounce' delay={1100}
                 initiallyVisible={true}
                 animateOnce={true}>
 
-                <img src={ok} alt='icons' />
+                <a href="https://instagram.com/istanbul_expert/">
+                  <img src={Insta} alt='icons' />
+                </a>
               </ScrollAnimation>
               <ScrollAnimation animateIn='bounce' delay={1200}
                 initiallyVisible={true}
