@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Jumbotron as Jumbo } from 'reactstrap';
 import styled from 'styled-components';
-import siti from '../assets/Images/istanbul_panorama.jpg';
+import siti from '../assets/Images/real-estate-gb254ea9ca_1921.jpg';
 import { useTranslation } from 'react-i18next';
 
 const Styles = styled.div`
@@ -15,8 +15,8 @@ const Styles = styled.div`
     z-index: -2;
   }
   .overlay {
-    background-color: #000;
-    opacity: 0.3;
+    background-color: #eeeeee;
+    opacity: 0.1;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -65,8 +65,8 @@ const Jumbotron = () => {
           <h2>{t('jumbotron-title-1')}</h2>
           <br />
           <p>{t('jumbotron-text-1')}<br />
-          {t('jumbotron-text-2')}<br />
-          {t('jumbotron-text-3')}
+            {t('jumbotron-text-2')}<br />
+            {t('jumbotron-text-3')}
           </p>
         </Container>
       </Jumbo>
