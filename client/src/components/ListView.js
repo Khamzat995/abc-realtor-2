@@ -14,7 +14,7 @@ const ListView = ({ products }) => {
         return (
           <article key={_id}>
             <Link to={`/products/${_id}`} >
-            <img src={images[0].url} alt={name} />
+              <img src={images[0].url} alt={name} />
             </Link>
             <div>
               <h4>
@@ -55,6 +55,30 @@ const ListView = ({ products }) => {
                 {
                   description === "description-4" &&
                   <>{t('product-description-4').substring(0, 150)}</>
+                }
+                {
+                  description === "description-5" &&
+                  <>{t('product-description-5').substring(0, 150)}</>
+                }
+                {
+                  description === "description-6" &&
+                  <>{t('product-description-6').substring(0, 150)}</>
+                }
+                {
+                  description === "description-7" &&
+                  <>{t('product-description-7').substring(0, 150)}</>
+                }
+                {
+                  description === "description-8" &&
+                  <>{t('product-description-8').substring(0, 150)}</>
+                }
+                {
+                  description === "description-9" &&
+                  <>{t('product-description-9').substring(0, 150)}</>
+                }
+                {
+                  description === "description-10" &&
+                  <>{t('product-description-10').substring(0, 150)}</>
                 }
                 ...</p>
               <Link to={`/products/${_id}`} className="btn">
@@ -98,6 +122,7 @@ const Wrapper = styled.section`
     width: 450px;
     justify-content: flex-start;
     align-items: baseline;
+    height: 30px;
   }
   .price {
     color: var(--clr-primary-4);

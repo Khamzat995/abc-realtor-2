@@ -73,6 +73,9 @@ const NavContainer = styled.nav`
     width: 90vw;
     margin: 0 auto;
     max-width: var(--max-width);
+    padding-left: 10px;
+    padding-right: 10px;
+    //box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   .nav-header {
     display: flex;

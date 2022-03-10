@@ -13,30 +13,30 @@ const CartItem = ({ id, image, name, price, amount, footage }) => {
   return (
     <Wrapper >
       <div className="title" >
-          <img src={image} alt={name} />
-            <div>
-              <Link to={`/products/${id}`} className="link">
-              <h5 className="name">
-                {/*{name}*/}
-                {
-                  name === "квартира" &&
-                  <>{t('product-name-1')}</>
-                }
-                {
-                  name === "дом" &&
-                  <>{t('product-name-2')}</>
-                }
-                {
-                  name === "земля" &&
-                  <>{t('product-name-3')}</>
-                }
+        <img src={image} alt={name} />
+        <div>
+          <Link to={`/products/${id}`} className="link">
+            <h5 className="name">
+              {/*{name}*/}
+              {
+                name === "квартира" &&
+                <>{t('product-name-1')}</>
+              }
+              {
+                name === "дом" &&
+                <>{t('product-name-2')}</>
+              }
+              {
+                name === "земля" &&
+                <>{t('product-name-3')}</>
+              }
 
-              </h5>
-              <h5 className="price-small">{formatPrice(price)}</h5>
-              </Link>
-            </div>
+            </h5>
+            <h5 className="price-small">{formatPrice(price)}</h5>
+          </Link>
+        </div>
       </div>
-        <h5 >{footage}{}м²</h5>
+      <h5 >{footage}{ }м²</h5>
       <h5 className="subtotal">{formatPrice(price * amount)}</h5>
       <button
         type="button"
