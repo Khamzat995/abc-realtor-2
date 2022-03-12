@@ -7,6 +7,7 @@ import telegram from '../assets/Icons/telegram.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { useTranslation } from 'react-i18next';
 
+
 const Contact = () => {
   const { t } = useTranslation();
 
@@ -28,35 +29,39 @@ const Contact = () => {
               <ScrollAnimation animateIn='bounce' delay={1000}
                 initiallyVisible={true}
                 animateOnce={true}>
-                <a href="https://wa.me/905522868989">
+                <a href="https://wa.me/905522868989" target="_blank" rel="noopener noreferrer">
                   <img src={WhatsApp} alt='icons' />
+                </a>
+              </ScrollAnimation>
+
+              <ScrollAnimation animateIn='bounce' delay={1300}
+                initiallyVisible={true}
+                animateOnce={true}>
+                <a href="https://telegram.im/Khamzat955" target="_blank" rel="noopener noreferrer">
+                  <img src={telegram} alt='icons' />
                 </a>
               </ScrollAnimation>
 
               <ScrollAnimation animateIn='bounce' delay={1100}
                 initiallyVisible={true}
                 animateOnce={true}>
-
-                <a href="https://instagram.com/istanbul_expert/">
+                <a href="https://instagram.com/istanbul_expert/" target="_blank" rel="noopener noreferrer">
                   <img src={Insta} alt='icons' />
                 </a>
               </ScrollAnimation>
+
               <ScrollAnimation animateIn='bounce' delay={1200}
                 initiallyVisible={true}
                 animateOnce={true}>
-
-                <img src={Gmail} alt='icons' />
-              </ScrollAnimation>
-              <ScrollAnimation animateIn='bounce' delay={1300}
-                initiallyVisible={true}
-                animateOnce={true}>
-
-                <img src={telegram} alt='icons' />
+                <a href="mailto:exp.istanbul@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <img src={Gmail} alt='icons' />
+                </a>
               </ScrollAnimation>
             </span>
           </div>
           <form className="contact-form">
             <input
+              action="https://formsubmit.co/russia.07@mail.ru" method="POST"
               type="email"
               className="form-input"
               placeholder={t('contact-placeholder')}

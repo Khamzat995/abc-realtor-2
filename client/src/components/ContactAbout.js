@@ -41,7 +41,7 @@ function ContactAbout() {
             </ScrollAnimation>
             <Link to="#"> <i className="fas fa-phone" /> +90 552 286 8989 </Link>
             <Link to="#"> <i className="fas fa-phone" /> +90 552 592 9191 </Link>
-            <Link to="#"> <i className="fas fa-envelope" />  exp.istambul@gmail.com </Link>
+            <a href="mailto:exp.istanbul@gmail.com"><i className="fas fa-envelope" />  exp.istambul@gmail.com </a>
             <Link to="#"> <i className="fas fa-map-marker-alt" /> {t('contact-about-text-9')} - 34520  </Link>
           </div>
           <div className="box" data-aos="fade-left">
@@ -50,11 +50,10 @@ function ContactAbout() {
               animateOnce={true}>
               <h4>{t('contact-about-4')}</h4>
             </ScrollAnimation>
-            <a href="https://wa.me/905522868989"><i className="fab fa-whatsapp" /> whatsapp </a>
-            <a href="https://instagram.com/istanbul_expert/"><i className="fab fa-instagram" /> instagram </a>
-            <Link to="#"> <i className="fab fa-telegram" /> telegram </Link>
+            <a href="https://wa.me/905522868989" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp" /> whatsapp </a>
+            <a href="https://instagram.com/istanbul_expert/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram" /> instagram </a>
+            <a href="https://telegram.im/Khamzat955" target="_blank" rel="noopener noreferrer"><i className="fab fa-telegram" /> telegram </a>
             <Link to="#"> <i className="fab fa-facebook-f" /> facebook </Link>
-            
           </div>
         </div>
       </section>

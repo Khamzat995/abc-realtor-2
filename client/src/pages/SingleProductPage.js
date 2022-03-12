@@ -17,6 +17,7 @@ import Product from '../components/Product';
 import { useTranslation } from 'react-i18next';
 import WhatsApp from '../assets/Icons/WhatsApp.png';
 import Insta from '../assets/Icons/insta.png';
+import telegram from '../assets/Icons/telegram.png'
 
 
 const SingleProductPage = () => {
@@ -173,14 +174,16 @@ const SingleProductPage = () => {
               <p className="fa fa-phone"> {t('product-span-text9')}</p>
             </p>
             <p className="info-1">
-              <a href="https://wa.me/905522868989">
+              <a href="https://wa.me/905522868989" target="_blank" rel="noopener noreferrer">
                 <img src={WhatsApp} alt='icons' />
               </a>
-              <a href="https://instagram.com/istanbul_expert/">
+              <a href="https://telegram.im/Khamzat955" target="_blank" rel="noopener noreferrer">
+                <img src={telegram} alt='icons' />
+              </a>
+              <a href="https://instagram.com/istanbul_expert/" target="_blank" rel="noopener noreferrer">
                 <img src={Insta} alt='icons' />
               </a>
             </p>
-
             <hr />
             {stock > 0 && <AddToCart product={product} />}
             {stock === 0 &&
