@@ -41,7 +41,7 @@ function ContactAbout() {
             </ScrollAnimation>
             <Link to="#"> <i className="fas fa-phone" /> +90 552 286 8989 </Link>
             <Link to="#"> <i className="fas fa-phone" /> +90 552 592 9191 </Link>
-            <a href="mailto:exp.istanbul@gmail.com"><i className="fas fa-envelope" />  exp.istambul@gmail.com </a>
+            <a href="mailto:exp.istanbul@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope" />  exp.istambul@gmail.com </a>
             <Link to="#"> <i className="fas fa-map-marker-alt" /> {t('contact-about-text-9')} - 34520  </Link>
           </div>
           <div className="box" data-aos="fade-left">
