@@ -37,7 +37,7 @@ const Contact = () => {
               <ScrollAnimation animateIn='bounce' delay={1300}
                 initiallyVisible={true}
                 animateOnce={true}>
-                <a href="https://telegram.im/Khamzat955" target="_blank" rel="noopener noreferrer">
+                <a href="https://telegram.im/@IstExp" target="_blank" rel="noopener noreferrer">
                   <img src={telegram} alt='icons' />
                 </a>
               </ScrollAnimation>

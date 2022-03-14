@@ -52,7 +52,7 @@ function ContactAbout() {
             </ScrollAnimation>
             <a href="https://wa.me/905522868989" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp" /> whatsapp </a>
             <a href="https://instagram.com/istanbul_expert/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram" /> instagram </a>
-            <a href="https://telegram.im/Khamzat955" target="_blank" rel="noopener noreferrer"><i className="fab fa-telegram" /> telegram </a>
+            <a href="https://telegram.im/@IstExp" target="_blank" rel="noopener noreferrer"><i className="fab fa-telegram" /> telegram </a>
             <Link to="#"> <i className="fab fa-facebook-f" /> facebook </Link>
           </div>
         </div>
