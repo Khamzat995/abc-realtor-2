@@ -133,6 +133,10 @@ const SingleProductPage = () => {
                 description === "description-10" &&
                 <>{t('product-description-10')}</>
               }
+              {
+                description === "description-11" &&
+                <>{t('product-description-11')}</>
+              }
             </p>
             <p className="info">
               <span>{t('product-span-text1')}</span>
@@ -178,7 +182,7 @@ const SingleProductPage = () => {
               <a href="https://wa.me/905522868989" target="_blank" rel="noopener noreferrer">
                 <img src={WhatsApp} alt='icons' />
               </a>
-              <a href="https://telegram.im/@IstExp" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/istanbul_exp" target="_blank" rel="noopener noreferrer">
                 <img src={telegram} alt='icons' />
               </a>
               <a href="https://instagram.com/istanbul_expert/" target="_blank" rel="noopener noreferrer">
