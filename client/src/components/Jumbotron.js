@@ -34,6 +34,9 @@ const Styles = styled.div`
     width: 90%;
     font-size: 18px;
   }
+  h2 {
+    color: white;
+  }
 
   @media screen and (max-width: 600px) {
     h2 {
