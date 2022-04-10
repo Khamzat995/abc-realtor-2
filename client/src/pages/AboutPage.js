@@ -10,26 +10,32 @@ import shutters from '../assets/Images/medicine/shutters.jpg';
 import JumbotronOne from '../components/JumbotronOne';
 import ContactAbout from '../components/ContactAbout';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from "react-helmet";
 
 const AboutPage = () => {
   const { t } = useTranslation();
 
   return (
     <main>
+      <Helmet>
+        <title>Туризм в Турции</title>
+        <meta name="description" content="Пляжный отдых в Турции Познавательно-экскурсионный отдых в Турции Медицинский туризм в Турции" />
+        <meta name="keywords" content="Турция, обладающая теплым морским побережьем, самыми всевозможными ландшафтами и очень полезным для здоровья климатом" />
+      </Helmet>
       <PageHero title="туризм" />
 
       <Wrapper className="page section section-center">
         <article>
           <div className="title">
             <h2>{t('about-title-1')}</h2>
-            <div className="underline"/>
+            <div className="underline" />
           </div>
           <p>{t('about-text-1')}</p>
-          <p><span style={{fontWeight:'bold', fontSize: '18px'}}>{t('about-title-2')}</span><br/>
+          <p><span style={{ fontWeight: 'bold', fontSize: '18px' }}>{t('about-title-2')}</span><br />
             {t('about-text-2')}</p>
-          <p> <span style={{fontWeight:'bold', fontSize: '18px'}}>{t('about-title-3')}</span><br/>
+          <p> <span style={{ fontWeight: 'bold', fontSize: '18px' }}>{t('about-title-3')}</span><br />
             {t('about-text-3')}</p>
-          <p> <span style={{fontWeight:'bold', fontSize: '18px'}}>{t('about-title-4')} </span><br/>
+          <p> <span style={{ fontWeight: 'bold', fontSize: '18px' }}>{t('about-title-4')} </span><br />
             {t('about-text-4')}</p>
         </article>
         <div className='picture-slider'>

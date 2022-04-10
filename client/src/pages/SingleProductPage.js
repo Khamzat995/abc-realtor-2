@@ -15,6 +15,7 @@ import styled from "styled-components";
 import ScrollToTop from 'react-scroll-to-top'
 import Product from '../components/Product';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from "react-helmet";
 import WhatsApp from '../assets/Icons/WhatsApp.png';
 import Insta from '../assets/Icons/insta.png';
 import telegram from '../assets/Icons/telegram.png'
@@ -68,6 +69,11 @@ const SingleProductPage = () => {
 
   return (
     <Wrapper>
+      <Helmet>
+        <title>product name</title>
+        <meta name="description" content="Квартира Дом Земля" />
+        <meta name="keywords" content="доступно район комнаты площадь этаж" />
+      </Helmet>
       <PageHero title={name} product />
       <div className="section section-center page">
         <div className="product-center">

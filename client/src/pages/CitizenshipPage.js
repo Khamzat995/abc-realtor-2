@@ -8,55 +8,61 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import styled from 'styled-components';
 import BannerOne from '../components/bannerOne/BannerOne';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 
 const CitizenshipPage = () => {
   const { t } = useTranslation();
 
   return (
-    <main style={{marginTop: "6rem"}}>
+    <main style={{ marginTop: "6rem" }}>
       <div className="citizen-card">
+        <Helmet>
+          <title>Турецкое гражданство</title>
+          <meta name="description" content="Инвестиции в недвижимость Владение недвижимостью Работа и проживание " />
+          <meta name="keywords" content="На что стоит обратить внимание" />
+        </Helmet>
         <BannerOne />
-          <div className="title">
-            <h4 className="title_citi">{t('citizen-title-1')}</h4>
-          </div>
-        <div className='citizen_div' style={{padding: "10px 10px"}}>
+        <div className="title">
+          <h4 className="title_citi">{t('citizen-title-1')}</h4>
+        </div>
+        <div className='citizen_div' style={{ padding: "10px 10px" }}>
           <p>{t('citizen-text-1')}
-             <a href="https://e-ikamet.goc.gov.tr/"> Goç İdaresi Genel Müdürlüğü</a>.
+            <a href="https://e-ikamet.goc.gov.tr/"> Goç İdaresi Genel Müdürlüğü</a>.
           </p>
         </div>
       </div>
       <Wrapper className="page section section-center">
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 0.5}>
-          <img src={citizen} alt='картинка'/>
+          <img src={citizen} alt='картинка' />
         </ScrollAnimation>
         <article>
           <div className="title">
             <h4>{t('citizen-title-2')}</h4>
-            <div className="underline"/>
+            <div className="underline" />
           </div>
-            <p>{t('citizen-text-2')} </p>
+          <p>{t('citizen-text-2')} </p>
         </article>
       </Wrapper>
       <Wrapper className="page section section-center">
         <article>
           <div className="title">
             <h4>{t('citizen-title-3')}</h4>
-            <div className="underline"/>
+            <div className="underline" />
           </div>
           <p>{t('citizen-text-3')}</p>
         </article>
-          <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 0.5}>
-          <img src={unnamedOne} alt='картинка'/>
+        <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 0.5}>
+          <img src={unnamedOne} alt='картинка' />
         </ScrollAnimation>
       </Wrapper>
       <Wrapper className="page section section-center">
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 0.5}>
-          <img src={buying} alt='картинка'/>
+          <img src={buying} alt='картинка' />
         </ScrollAnimation>
         <article>
           <div className="title">
             <h4>{t('citizen-title-4')}</h4>
-            <div className="underline"/>
+            <div className="underline" />
           </div>
           <p>{t('citizen-text-4')}</p>
         </article>
@@ -65,16 +71,16 @@ const CitizenshipPage = () => {
         <article>
           <div className="title">
             <h4>{t('citizen-title-5')}</h4>
-            <div className="underline"/>
+            <div className="underline" />
           </div>
           <p>{t('citizen-text-5')}</p>
         </article>
-          <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 0.5}>
-          <img src={workOne} alt='картинка'/>
+        <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 0.5}>
+          <img src={workOne} alt='картинка' />
         </ScrollAnimation>
       </Wrapper>
-      <div className="citizen-card-two" style={{padding: "10px 10px"}}>
-          <h4>{t('citizen-title-6')}</h4>
+      <div className="citizen-card-two" style={{ padding: "10px 10px" }}>
+        <h4>{t('citizen-title-6')}</h4>
         <p>{t('citizen-text-6')}</p>
       </div>
       <JumbotronTwo />

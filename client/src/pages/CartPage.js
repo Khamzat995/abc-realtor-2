@@ -4,6 +4,7 @@ import { useCartContext } from "../context/cart_context";
 import { Link } from "react-router-dom";
 import { CartContent, PageHero } from "../components";
 import { useTranslation } from 'react-i18next';
+import { Helmet } from "react-helmet";
 
 const CartPage = () => {
   const { t } = useTranslation()
@@ -11,6 +12,11 @@ const CartPage = () => {
   if (cart.length < 1) {
     return (
       <Wrapper className="page-100">
+        <Helmet>
+          <title>Избранное</title>
+          <meta name="description" content="Недвижимость Площадь Цена Удалить" />
+          <meta name="keywords" content="Удалить Цена Площадь Недвижимость Избранное" />
+        </Helmet>
         <div className="empty">
           <h3>{t('cart-page-text')}</h3>
           <Link to="/products" className="btn">
