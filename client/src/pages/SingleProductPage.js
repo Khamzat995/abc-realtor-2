@@ -256,7 +256,7 @@ const SingleProductPage = () => {
         <div className="prefix">
           <ScrollToTop />
           {
-            newProducts.slice(0, 6).map((product) => {
+            newProducts.slice(0, 6).map(product => {
               return product.company === product.company
                 ?
                 <div className="products" >
