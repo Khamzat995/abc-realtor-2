@@ -57,7 +57,6 @@ function App() {
   return (
     <Suspense fallback={loadingMarkup}>
       <React.StrictMode>
-
         <div className="App">
           <Helmet>
             <title>Квартира в Турции</title>
