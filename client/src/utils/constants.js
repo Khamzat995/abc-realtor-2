@@ -1,7 +1,7 @@
 import React from 'react'
-import picOne from '../assets/Images/picOne.png'
-import picThree from '../assets/Images/picThree.png'
-import picFour from '../assets/Images/picFour.png'
+import picOne from '../assets/Images/picOne.jpg'
+import picThree from '../assets/Images/picThree.jpg'
+import picFour from '../assets/Images/picFour.jpg'
 
 
 export const links = [
@@ -30,26 +30,26 @@ export const links = [
 export const services = [
   {
     id: 1,
-    image: <img src={picOne} style={{borderRadius: "50px", width: "100px"}} alt="картинка" />,//<GiStabbedNote />,
+    image: <img src={picOne} style={{ borderRadius: "50px", width: "100px" }} alt="картинка" />,//<GiStabbedNote />,
     title: 'services-name-1',
     text: 'services-text-1',
   },
   {
     id: 2,
-    image: <img src={picFour} style={{borderRadius: "50px", width: "100px"}} alt="картинка" />,//<GiStabbedNote />,
+    image: <img src={picFour} style={{ borderRadius: "50px", width: "100px" }} alt="картинка" />,//<GiStabbedNote />,
     title: 'services-name-2',
     text: 'services-text-2',
   },
   {
     id: 3,
-    image: <img src={picThree} style={{borderRadius: "50px", width: "100px"}} alt="картинка" />,//<GiStabbedNote />,
+    image: <img src={picThree} style={{ borderRadius: "50px", width: "100px" }} alt="картинка" />,//<GiStabbedNote />,
     title: 'services-name-3',
     text: 'services-text-3',
   },
 ]
 
 let products_url;
-if(process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development') {
   products_url = 'http://localhost:3051/products/';
 } else {
   products_url = 'https://istanbul-expert.site/api/products/'

@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import WhatsApp from '../assets/Icons/WhatsApp.png';
-import Insta from '../assets/Icons/insta.png';
-import Gmail from '../assets/Icons/Gmail.png';
-import telegram from '../assets/Icons/telegram.png';
+import WhatsApp from '../assets/Icons/WhatsApp.jpg';
+import Insta from '../assets/Icons/insta.jpg';
+import Gmail from '../assets/Icons/Gmail.jpg';
+import telegram from '../assets/Icons/telegram.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { useTranslation } from 'react-i18next';
 
@@ -25,7 +25,7 @@ const Contact = () => {
               <ScrollAnimation delay={1000} animateIn='tada' initiallyVisible={true}> <i className="fas fa-phone">{" "}+90 552 286 8989, +90 552 592 9191 </i> .
               </ScrollAnimation>{t('contact-text-2')}
             </p>
-            <span className='contacts_item'>
+            <span className='contacts-item'>
               <ScrollAnimation animateIn='bounce' delay={1000}
                 initiallyVisible={true}
                 animateOnce={true}>
@@ -85,13 +85,13 @@ const Wrapper = styled.section`
     max-width: 45em;
     color: var(--clr-grey-3);
   }
-  .content .contacts_item {
+  .content .contacts-item {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
-  .content .contacts_item img {
+  .content .contacts-item img {
     margin-right: 15px;
     height: 40px;
   }

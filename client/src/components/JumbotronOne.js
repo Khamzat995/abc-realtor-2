@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Jumbotron as Jumbo } from 'reactstrap';
 import styled from 'styled-components';
-import Antalya from '../assets/Images/Antalya.jpeg';
+import Antalya from '../assets/Images/Antalya.jpg';
 import { useTranslation } from 'react-i18next';
 
 const Styles = styled.div`
@@ -56,19 +56,19 @@ const JumbotronOne = () => {
   const { t } = useTranslation()
   return (
     <Styles>
-    <Jumbo fluid className='jumbo'>
-      <div className='overlay'> </div>
-      <Container fluid className='container-fluid'>
-        <h2>{t('jumbotron-one-title1')}</h2>
-        <h3>{t('jumbotron-one-title2')}</h3>
-        <p>
-          {t('jumbotron-one-text1')}<br/>
-          {t('jumbotron-one-text2')}<br/>
-          {t('jumbotron-one-text3')}<br/>
-          {t('jumbotron-one-text4')}<br/>
-        </p>
-      </Container>
-    </Jumbo>
+      <Jumbo fluid className='jumbo'>
+        <div className='overlay'> </div>
+        <Container fluid className='container-fluid'>
+          <h2>{t('jumbotron-one-title1')}</h2>
+          <h3>{t('jumbotron-one-title2')}</h3>
+          <p>
+            {t('jumbotron-one-text1')}<br />
+            {t('jumbotron-one-text2')}<br />
+            {t('jumbotron-one-text3')}<br />
+            {t('jumbotron-one-text4')}<br />
+          </p>
+        </Container>
+      </Jumbo>
     </Styles>
   );
 }
