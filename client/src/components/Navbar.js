@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Logo_expertRed from "../assets/logo/Logo_expertRed.jpg";
+import Logo_expertRed from "../assets/logo/Logo_expertRed.avif";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { links } from "../utils/constants";
 import CartButtons from "./CartButtons";
 import { useProductsContext } from "../context/products_context";
 import { useUserContext } from "../context/user_context";
-import flagOne from '../assets/Icons/flagOne.jpg';
+import flagOne from '../assets/Icons/flagOne.avif';
 import { useTranslation } from 'react-i18next';
 import LangTransOne from "./LangTransOne";
 
