@@ -13,6 +13,7 @@ import {
   AuthWrapper,
   Citizenship
 } from "./pages";
+import XML from "./pages/sitemap.xml"
 
 import i18next from 'i18next';
 import HttpApi from 'i18next-http-backend';
@@ -87,6 +88,7 @@ function App() {
                 <PrivateRoute exact path="/checkout">
                   <Checkout />
                 </PrivateRoute>
+                <Route component={XML} path={'/sitemap.xml'} />
                 <Route path="*">
                   <Error />
                 </Route>
