@@ -58,7 +58,7 @@ function App() {
   return (
     <Suspense fallback={loadingMarkup}>
       <React.StrictMode>
-        <div className="App">
+        <div className="app">
           <Helmet>
             <title>Квартира в Турции</title>
             <meta name='description' content='Купить квартиру, недвижимость в Турции легко. Предложения от застойщиков' />

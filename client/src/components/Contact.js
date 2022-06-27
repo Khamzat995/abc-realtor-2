@@ -4,6 +4,7 @@ import WhatsApp from '../assets/Icons/WhatsApp.jpg';
 import Insta from '../assets/Icons/insta.webp';
 import Gmail from '../assets/Icons/Gmail.jpg';
 import telegram from '../assets/Icons/telegram.jpg';
+import Youtube from "../assets/Icons/Youtube_mini.webp";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { useTranslation } from 'react-i18next';
 
@@ -51,6 +52,14 @@ const Contact = () => {
               </ScrollAnimation>
 
               <ScrollAnimation animateIn='bounce' delay={1200}
+                initiallyVisible={true}
+                animateOnce={true}>
+                <a href="https://www.youtube.com/channel/UCR58sPLCgfgkZ0BDs9TKeCQ" target="_blank" rel="noopener noreferrer">
+                  <img src={Youtube} alt='icons' />
+                </a>
+              </ScrollAnimation>
+
+              <ScrollAnimation animateIn='bounce' delay={1300}
                 initiallyVisible={true}
                 animateOnce={true}>
                 <a href="mailto:exp.istanbul@gmail.com" target="_blank" rel="noopener noreferrer">

@@ -41,8 +41,8 @@ function ContactAbout() {
             </ScrollAnimation>
             <Link to="#"> <i className="fas fa-phone" /> +90 552 286 8989 </Link>
             <Link to="#"> <i className="fas fa-phone" /> +90 552 592 9191 </Link>
-            <a href="mailto:exp.istanbul@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope" />  exp.istambul@gmail.com </a>
-            <Link to="#"> <i className="fas fa-map-marker-alt" /> {t('contact-about-text-9')} - 34520  </Link>
+            <a href="mailto:exp.istanbul@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope" /> istambul@gmail.com </a>
+            <Link to="#"> <i className="fas fa-map-marker-alt" /> {t('contact-about-text-9')} 34520  </Link>
           </div>
           <div className="box" data-aos="fade-left">
             <ScrollAnimation animateIn='bounce'
@@ -53,7 +53,7 @@ function ContactAbout() {
             <a href="https://wa.me/905522868989" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp" /> whatsapp </a>
             <a href="https://instagram.com/istanbul_expert/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram" /> instagram </a>
             <a href="https://t.me/istanbul_exp" target="_blank" rel="noopener noreferrer"><i className="fab fa-telegram" /> telegram </a>
-            <Link to="#"> <i className="fab fa-facebook-f" /> facebook </Link>
+            <a href="https://www.youtube.com/channel/UCR58sPLCgfgkZ0BDs9TKeCQ" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube" /> youtube </a>
           </div>
         </div>
       </section>
