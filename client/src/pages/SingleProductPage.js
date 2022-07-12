@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 /*import { useParams, useHistory, Link } from "react-router-dom";*/
 import { useParams, Link } from "react-router-dom";
 import { useProductsContext } from "../context/products_context";
+import ScrollAnimation from "react-animate-on-scroll";
 import { formatPrice } from "../utils/helpers";
 import {
   Loading,
@@ -87,101 +88,116 @@ const SingleProductPage = () => {
                 <>{t('product-name-1')}</>
               }
               {
-                name === "дом" &&
+                name === "дуплекс" &&
                 <>{t('product-name-2')}</>
               }
               {
                 name === "земля" &&
                 <>{t('product-name-3')}</>
               }
+              {
+                name === "вилла" &&
+                <>{t('product-name-4')}</>
+              }
             </h2>
             <Stars stars={stars} reviews={reviews} />
-            <h5 className="price">{formatPrice(price)}</h5>
+            {/* <h5 className="price">{formatPrice(price)}</h5> */}
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-start", width: "100%" }}><h5 className="price">{price}$</h5>
+              <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 1000}>
+                <p className="citizen-price">
+                  {price >= 400000 && <>{t('citizen-price')}</>
+                  }
+                </p>
+              </ScrollAnimation>
+            </div>
+
+
+
             <p className="desc">
               {/*{description}*/}
               {
-                description === "description-1" &&
+                description === "description_benesta" &&
                 <>{t('product-description-1')}</>
               }
 
               {
-                description === "description-2" &&
+                description === "description_odul" &&
                 <>{t('product-description-2')}</>
               }
               {
-                description === "description-3" &&
+                description === "description_acarblu" &&
                 <>{t('product-description-3')}</>
               }
               {
-                description === "description-4" &&
+                description === "description_alya" &&
                 <>{t('product-description-4')}</>
               }
               {
-                description === "description-5" &&
+                description === "description_gumus" &&
                 <>{t('product-description-5')}</>
               }
               {
-                description === "description-6" &&
+                description === "description_kandilli_reserve" &&
                 <>{t('product-description-6')}</>
               }
               {
-                description === "description-7" &&
+                description === "description_kandilli_yucelpark" &&
                 <>{t('product-description-7')}</>
               }
               {
-                description === "description-8" &&
+                description === "description_kandilli_nakkastepe" &&
                 <>{t('product-description-8')}</>
               }
               {
-                description === "description-9" &&
+                description === "description_kandilli_skyland" &&
                 <>{t('product-description-9')}</>
               }
               {
-                description === "description-10" &&
+                description === "description_nisantası_koru" &&
                 <>{t('product-description-10')}</>
               }
               {
-                description === "description-11" &&
+                description === "description_teras_kule" &&
                 <>{t('product-description-11')}</>
               }
               {
-                description === "description-12" &&
+                description === "description_yamanevler" &&
                 <>{t('product-description-12')}</>
               }
               {
-                description === "description-13" &&
+                description === "description_matar_residence" &&
                 <>{t('product-description-13')}</>
               }
               {
-                description === "description-14" &&
+                description === "description_matar_istanbul" &&
                 <>{t('product-description-14')}</>
               }
               {
-                description === "description-15" &&
+                description === "description_matar_deluxia" &&
                 <>{t('product-description-15')}</>
               }
               {
-                description === "description-16" &&
+                description === "description_matar_marti" &&
                 <>{t('product-description-16')}</>
               }
               {
-                description === "description-17" &&
+                description === "description_matar_uplife" &&
                 <>{t('product-description-17')}</>
               }
               {
-                description === "description-18" &&
+                description === "description_matar_yucelpark" &&
                 <>{t('product-description-18')}</>
               }
               {
-                description === "description-19" &&
+                description === "description_matar_evinpark" &&
                 <>{t('product-description-19')}</>
               }
               {
-                description === "description-20" &&
+                description === "description_nefes_cengelkoy" &&
                 <>{t('product-description-20')}</>
               }
               {
-                description === "description-21" &&
+                description === "description_bluesea" &&
                 <>{t('product-description-21')}</>
               }
               {
@@ -203,7 +219,13 @@ const SingleProductPage = () => {
                 {company}
               </p>
             }
-            {category === "дома" &&
+            {category === "дуплексы" &&
+              <p className="info">
+                <span>{t('product-span-text5')}</span>
+                {company}
+              </p>
+            }
+            {category === "виллы" &&
               <p className="info">
                 <span>{t('product-span-text5')}</span>
                 {company}
@@ -213,7 +235,7 @@ const SingleProductPage = () => {
               <span>{t('product-span-text6')}</span>
               {footage}{" "} м²
             </p>
-            {category === "дома" &&
+            {category === "дуплексы" &&
               <p className="info">
                 <span className="floor">{t('product-span-text7')}</span>
                 <p className="floor-two">{floor}</p>
@@ -225,26 +247,42 @@ const SingleProductPage = () => {
                 <p className="floor-two">{floor}</p>
               </p>
             }
+            {category === "виллы" &&
+              <p className="info">
+                <span className="floor">{t('product-span-text7')}</span>
+                <p className="floor-two">{floor}</p>
+              </p>
+            }
             <p className="info-1">
               <span className="floor-1">{t('product-span-text8')}{" "}</span>
               <p className="fa fa-phone"> {t('product-span-text9')}</p>
             </p>
             <p className="info-1">
-              <a href="https://wa.me/905522868989" target="_blank" rel="noopener noreferrer">
-                <img src={WhatsApp} alt='icons' />
-              </a>
-              <a href="https://t.me/istanbul_exp" target="_blank" rel="noopener noreferrer">
-                <img src={telegram} alt='icons' />
-              </a>
-              <a href="https://instagram.com/istanbul_expert/" target="_blank" rel="noopener noreferrer">
-                <img src={Insta} alt='icons' />
-              </a>
-              <a href="https://www.youtube.com/channel/UCR58sPLCgfgkZ0BDs9TKeCQ" target="_blank" rel="noopener noreferrer">
-                <img src={Youtube} alt='icons' />
-              </a>
-              <a href="mailto:exp.istanbul@gmail.com" target="_blank" rel="noopener noreferrer">
-                <img src={Gmail} alt='icons' />
-              </a>
+              <ScrollAnimation animateIn="fadeInRight" delay={0.1 * 1000}>
+                <a href="https://wa.me/905522868989" target="_blank" rel="noopener noreferrer">
+                  <img src={WhatsApp} alt='icons' />
+                </a>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeInRight" delay={0.1 * 2000}>
+                <a href="https://t.me/istanbul_exp" target="_blank" rel="noopener noreferrer">
+                  <img src={telegram} alt='icons' />
+                </a>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeInRight" delay={0.1 * 3000}>
+                <a href="https://instagram.com/istanbul_expert/" target="_blank" rel="noopener noreferrer">
+                  <img src={Insta} alt='icons' />
+                </a>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeInRight" delay={0.1 * 4000}>
+                <a href="https://www.youtube.com/channel/UCR58sPLCgfgkZ0BDs9TKeCQ" target="_blank" rel="noopener noreferrer">
+                  <img src={Youtube} alt='icons' />
+                </a>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeInRight" delay={0.1 * 5000}>
+                <a href="mailto:exp.istanbul@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <img src={Gmail} alt='icons' />
+                </a>
+              </ScrollAnimation>
             </p>
             <hr />
             {stock > 0 && <AddToCart product={product} />}
@@ -268,8 +306,8 @@ const SingleProductPage = () => {
             })
           }
         </div>
-      </div>
-    </Wrapper>
+      </div >
+    </Wrapper >
   );
 };
 

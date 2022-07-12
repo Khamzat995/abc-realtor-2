@@ -49,9 +49,8 @@ const Filters = () => {
                     onClick={updateFilters}
                     name="category"
                     type="button"
-                    className={`${
-                      category === c.toLowerCase() ? "active" : null
-                    }`}
+                    className={`${category === c.toLowerCase() ? "active" : null
+                      }`}
                   >
                     {/*{c}*/}
 
@@ -64,12 +63,16 @@ const Filters = () => {
                       <>{t('filter-category-name-2')}</>
                     }
                     {
-                      c === "дома" &&
+                      c === "дуплексы" &&
                       <>{t('filter-category-name-3')}</>
                     }
                     {
                       c === "земля" &&
                       <>{t('filter-category-name-4')}</>
+                    }
+                    {
+                      c === "виллы" &&
+                      <>{t('filter-category-name-5')}</>
                     }
 
                   </button>
@@ -89,7 +92,7 @@ const Filters = () => {
               {companies.map((c, index) => {
                 return (
                   <option key={index}
-                           value={c}
+                    value={c}
                   >
                     {c}
                     {/*{*/}
@@ -144,7 +147,8 @@ const Filters = () => {
           </div>
           <div className="form-control">
             <h5>{t('filters-title-3')}</h5>
-            <p className="price">{formatPrice(price)}</p>
+            {/* <p className="price">{formatPrice(price)}</p>
+ */}            <p className="price">{price}$</p>
             <input
               type="range"
               name="price"

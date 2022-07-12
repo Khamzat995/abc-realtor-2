@@ -75,18 +75,22 @@ export const FilterProvider = ({ children }) => {
     let value = e.target.value;
     if (name === "category") {
       value = e.target.textContent
-      if(value==='все' || value==='Все' || value==='All' || value === 'tümü' || value === 'Tümü' || value === 'الكل'){
-        value='all'
+      if (value === 'все' || value === 'Все' || value === 'All' || value === 'tümü' || value === 'Tümü' || value === 'الكل') {
+        value = 'all'
       }
-      if(value==='квартиры' || value === 'Квартиры'|| value==='apartments' || value === 'daireler' || value==='Apartments' || value === 'Daireler' || value === 'أرض'){
-        value='квартиры'
+      if (value === 'квартиры' || value === 'Квартиры' || value === 'apartments' || value === 'daireler' || value === 'Apartments' || value === 'Daireler' || value === 'أرض') {
+        value = 'квартиры'
       }
-      if(value==='дома' || value === 'Дома' || value==='houses' || value === 'evler' || value==='Houses' || value === 'Evler' || value === 'منازل'){
-        value='дома'
+      if (value === 'виллы' || value === 'Виллы' || value === 'villas' || value === 'Villas' || value === 'فلل') {
+        value = 'виллы'
       }
-      if(value==='земля' || value === 'Земля' || value==='earth' || value === 'dünya'  || value==='Earth' || value === 'Dünya' || value === 'شقق'){
-        value='земля'
+      if (value === 'дуплексы' || value === 'Дуплексы' || value === 'duplexes' || value === 'dubleksler' || value === 'Duplexes' || value === 'Dubleksler' || value === 'دوبلكس') {
+        value = 'дуплексы'
       }
+      if (value === 'земля' || value === 'Земля' || value === 'earth' || value === 'dünya' || value === 'Earth' || value === 'Dünya' || value === 'شقق') {
+        value = 'земля'
+      }
+
     }
 
     // if (name === "company") {

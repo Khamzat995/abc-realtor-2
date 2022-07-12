@@ -24,104 +24,110 @@ const ListView = ({ products }) => {
                   <>{t('product-name-1')}</>
                 }
                 {
-                  name === "дом" &&
+                  name === "дуплекс" &&
                   <>{t('product-name-2')}</>
                 }
                 {
                   name === "земля" &&
                   <>{t('product-name-3')}</>
                 }
+                {
+                  name === "вилла" &&
+                  <>{t('product-name-4')}</>
+                }
               </h4>
               <div className="stars-price" >
-                <h5 className="price">{formatPrice(price)}</h5>
+                {/*  <h5 className="price">{formatPrice(price)}</h5>
+ */}
+                <h5 className="price">{price}$</h5>
                 <Stars stars={stars} reviews={reviews} />
               </div>
               <p>
                 {/*{description.substring(0, 150)}*/}
 
                 {
-                  description === "description-1" &&
+                  description === "description_benesta" &&
                   <>{t('product-description-1').substring(0, 150)}</>
                 }
 
                 {
-                  description === "description-2" &&
+                  description === "description_odul" &&
                   <>{t('product-description-2').substring(0, 150)}</>
                 }
                 {
-                  description === "description-3" &&
+                  description === "description_acarblu" &&
                   <>{t('product-description-3').substring(0, 150)}</>
                 }
                 {
-                  description === "description-4" &&
+                  description === "description_alya" &&
                   <>{t('product-description-4').substring(0, 150)}</>
                 }
                 {
-                  description === "description-5" &&
+                  description === "description_gumus" &&
                   <>{t('product-description-5').substring(0, 150)}</>
                 }
                 {
-                  description === "description-6" &&
+                  description === "description_kandilli_reserve" &&
                   <>{t('product-description-6').substring(0, 150)}</>
                 }
                 {
-                  description === "description-7" &&
+                  description === "description_kandilli_yucelpark" &&
                   <>{t('product-description-7').substring(0, 150)}</>
                 }
                 {
-                  description === "description-8" &&
+                  description === "description_kandilli_nakkastepe" &&
                   <>{t('product-description-8').substring(0, 150)}</>
                 }
                 {
-                  description === "description-9" &&
+                  description === "description_kandilli_skyland" &&
                   <>{t('product-description-9').substring(0, 150)}</>
                 }
                 {
-                  description === "description-10" &&
+                  description === "description_nisantası_koru" &&
                   <>{t('product-description-10').substring(0, 150)}</>
                 }
                 {
-                  description === "description-11" &&
+                  description === "description_teras_kule" &&
                   <>{t('product-description-11').substring(0, 150)}</>
                 }
                 {
-                  description === "description-12" &&
+                  description === "description_yamanevler" &&
                   <>{t('product-description-12').substring(0, 150)}</>
                 }
                 {
-                  description === "description-13" &&
+                  description === "description_matar_residence" &&
                   <>{t('product-description-13').substring(0, 150)}</>
                 }
                 {
-                  description === "description-14" &&
+                  description === "description_matar_istanbul" &&
                   <>{t('product-description-14').substring(0, 150)}</>
                 }
                 {
-                  description === "description-15" &&
+                  description === "description_matar_deluxia" &&
                   <>{t('product-description-15').substring(0, 150)}</>
                 }
                 {
-                  description === "description-16" &&
+                  description === "description_matar_marti" &&
                   <>{t('product-description-16').substring(0, 150)}</>
                 }
                 {
-                  description === "description-17" &&
+                  description === "description_matar_uplife" &&
                   <>{t('product-description-17').substring(0, 150)}</>
                 }
                 {
-                  description === "description-18" &&
+                  description === "description_matar_yucelpark" &&
                   <>{t('product-description-18').substring(0, 150)}</>
                 }
                 {
-                  description === "description-19" &&
+                  description === "description_matar_evinpark" &&
                   <>{t('product-description-19').substring(0, 150)}</>
                 }
                 {
-                  description === "description-20" &&
+                  description === "description_nefes_cengelkoy" &&
                   <>{t('product-description-20').substring(0, 150)}</>
                 }
                 {
-                  description === "description-21" &&
+                  description === "description_bluesea" &&
                   <>{t('product-description-21').substring(0, 150)}</>
                 }
                 {

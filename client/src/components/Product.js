@@ -20,26 +20,33 @@ const Product = ({ images, name, category, company, footage, price, _id }) => {
               <>{t('product-name-1')}</>
             }
             {
-              name === "дом" &&
+              name === "дуплекс" &&
               <>{t('product-name-2')}</>
             }
             {
               name === "земля" &&
               <>{t('product-name-3')}</>
             }
+            {
+              name === "вилла" &&
+              <>{t('product-name-4')}</>
+            }
 
           </h5>
           <div>
-            {category === "дома" &&
+            {category === "дуплексы" &&
               <i className="fa fa-bed" aria-hidden="true">{" "}{company}</i>
             }
             {category === "квартиры" &&
               <i className="fa fa-bed" aria-hidden="true">{" "}{company}</i>
             }
+            {category === "виллы" &&
+              <i className="fa fa-bed" aria-hidden="true">{" "}{company}</i>
+            }
 
           </div>
           <div>
-            {category === "дома" &&
+            {category === "дуплексы" &&
               <i className="fa fa-cube" aria-hidden="true"> {footage}{" "}м² </i>
             }
             {category === "квартиры" &&
@@ -48,9 +55,13 @@ const Product = ({ images, name, category, company, footage, price, _id }) => {
             {category === "земля" &&
               <i className="fa fa-cube" aria-hidden="true"> {footage}{" "}м² </i>
             }
+            {category === "виллы" &&
+              <i className="fa fa-cube" aria-hidden="true"> {footage}{" "}м² </i>
+            }
           </div>
 
-          <p>{formatPrice(price)}</p>
+          {/* <p>{formatPrice(price)}</p> */}
+          <p>{price}$</p>
         </footer>
       </Link>
     </Wrapper>

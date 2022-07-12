@@ -23,16 +23,21 @@ const CartItem = ({ id, image, name, price, amount, footage }) => {
                 <>{t('product-name-1')}</>
               }
               {
-                name === "дом" &&
+                name === "дуплекс" &&
                 <>{t('product-name-2')}</>
               }
               {
                 name === "земля" &&
                 <>{t('product-name-3')}</>
               }
+              {
+                name === "вилла" &&
+                <>{t('product-name-4')}</>
+              }
 
             </h5>
-            <h5 className="price-small">{formatPrice(price)}</h5>
+            {/* <h5 className="price-small">{formatPrice(price)}</h5> */}
+            <h5 className="price-small">{price}$</h5>
           </Link>
         </div>
       </div>
