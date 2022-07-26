@@ -201,7 +201,7 @@ const SingleProductPage = () => {
                 <>{t('product-description-21')}</>
               }
               {
-                description === "description-22" &&
+                description === "description_four_winds" &&
                 <>{t('product-description-22')}</>
               }
             </p>

@@ -131,7 +131,7 @@ const ListView = ({ products }) => {
                   <>{t('product-description-21').substring(0, 150)}</>
                 }
                 {
-                  description === "description-22" &&
+                  description === "description_four_winds" &&
                   <>{t('product-description-22').substring(0, 150)}</>
                 }
                 ...</p>

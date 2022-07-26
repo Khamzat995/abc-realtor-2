@@ -99,3 +99,7 @@
             "district": "Beylikdüzü"
             }
             ////
+
+            npm i react-modal-slider
+            // npm install react-slick --save   было
+            // npm install slick-carousel    было
