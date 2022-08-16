@@ -365,6 +365,100 @@ p {
   font-weight: 700;
 }
 
+/* button coll */
+.wrap-coll {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.button-coll {
+  max-width: 200px;
+  max-height: 54px;
+  /* font-family: 'Nunito', sans-serif; */
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-weight: 400;
+  color: #313133;
+  /* background: #4FD1C5; */
+  background: linear-gradient(90deg, rgb(152, 242, 230) 0%, rgb(92, 244, 229) 100%);
+  border: none;
+  border-radius: 1000px;
+  /* box-shadow: 10px 10px 10px rgba(31, 39, 38, 0.64); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.button-coll::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  /* border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0, 255, 203, .64); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button-coll:hover,
+.button-coll:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.button-coll:hover::before,
+.button-coll:focus::before {
+  opacity: 1;
+}
+
+.button-coll::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #FFFF00;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.button-coll:hover::after,
+.button-coll:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+
+  }
+}
+
+
+
 /*---banner---*/
 .banner__container {
   display: flex;
@@ -456,6 +550,7 @@ p {
   .banner__content {
     width: 0;
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -469,6 +564,21 @@ p {
 
   .title_citi {
     padding-top: 20px;
+  }
+
+
+  .floor-1 {
+    max-width: 160px;
+  }
+
+  .wrap-coll {
+    width: 50px;
+    margin-left: 5px;
+    font-weight: 800;
+  }
+
+  .button-coll {
+    font-size: 0.4rem;
   }
 }
 

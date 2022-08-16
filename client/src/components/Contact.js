@@ -66,7 +66,15 @@ const Contact = () => {
                   <img src={Gmail} alt='icons' />
                 </a>
               </ScrollAnimation>
+
+              <div class="wrap-coll">
+                <a href="tel:+905522868989">
+                  <button class="button-coll">{t('product-span-text9')}</button>
+                </a>
+              </div>
+
             </span>
+
           </div>
           <form className="contact-form">
             <input
