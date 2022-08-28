@@ -4,13 +4,17 @@ import { formatPrice } from "../utils/helpers";
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
-const Product = ({ images, name, category, company, footage, price, _id }) => {
+const Product = ({ images, name, category, company, footage, price, district, _id }) => {
   const { t } = useTranslation();
 
   return (
     <Wrapper>
       <Link to={`/products/${_id}`}>
         <div className="container">
+          <p className="info-face">
+            <span>{t('product-span-text4')}</span>
+            {district}
+          </p>
           <img src={images[0].url} alt={name} />
         </div>
         <footer>

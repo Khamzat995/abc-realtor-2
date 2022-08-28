@@ -307,6 +307,21 @@ p {
   transform: scale(1.2);
 }
 
+/* info-face */
+.info-face {
+  background-color: rgba(34, 34, 34, 0.441);
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 10px;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 85%;
+  left: 10px;
+  /* font-size: 110%; */
+
+}
+
 @media (min-width: 992px) {
   .citizen-card {
     margin-left: auto;
@@ -382,9 +397,10 @@ p {
   text-transform: uppercase;
   letter-spacing: 1.1px;
   font-weight: 400;
-  color: #313133;
+  color: white;
   /* background: #4FD1C5; */
-  background: linear-gradient(90deg, rgb(152, 242, 230) 0%, rgb(92, 244, 229) 100%);
+  /* background: linear-gradient(90deg, rgb(152, 242, 230) 0%, rgb(92, 244, 229) 100%); */
+  background: #408984;
   border: none;
   border-radius: 1000px;
   /* box-shadow: 10px 10px 10px rgba(31, 39, 38, 0.64); */
