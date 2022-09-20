@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 const Styles = styled.div`
   .jumbo {
-    background: url(${Antalya})no-repeat fixed bottom;
+    background: url(${Antalya});
     background-size: cover;
     color: #efefef;
     height: 510px;
