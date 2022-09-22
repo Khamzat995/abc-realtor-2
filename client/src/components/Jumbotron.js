@@ -7,7 +7,8 @@ import { useTranslation } from 'react-i18next';
 
 const Styles = styled.div`
   .jumbo {
-    background: url(${siti})no-repeat fixed bottom;
+    /* background: url(${siti})no-repeat fixed bottom; */
+    background: url(${siti});
     background-size: cover;
     color: #efefef;
     height: 500px;

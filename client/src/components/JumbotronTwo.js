@@ -7,7 +7,8 @@ import { useTranslation } from 'react-i18next';
 
 const Styles = styled.div`
   .jumbo {
-    background: url(${panoramaJumbo})no-repeat fixed bottom;
+    /* background: url(${panoramaJumbo})no-repeat fixed bottom; */
+    background: url(${panoramaJumbo});
     background-size: cover;
     color: #efefef;
     height: 600px;
@@ -57,27 +58,27 @@ const JumbotronTwo = () => {
 
   return (
     <Styles>
-    <Jumbo fluid className='jumbo'>
-      <div className='overlay'> </div>
-      <Container fluid className='container-fluid'>
-        <h2>{t('jumbotron-two-1')}</h2>
-        <h3>{t('jumbotron-two-2')}</h3>
-        <p>
-          {t('jumbotron-two-text1')}<br/>
-          {t('jumbotron-two-text2')}<br/>
-          {t('jumbotron-two-text3')}<br/>
-          {t('jumbotron-two-text4')}<br/>
-          {t('jumbotron-two-text5')}<br/>
-          {t('jumbotron-two-text6')}<br/>
-          {t('jumbotron-two-text7')}<br/>
-          {t('jumbotron-two-text8')}<br/>
-          {t('jumbotron-two-text9')}<br/>
-          {t('jumbotron-two-text10')}<br/>
-          {t('jumbotron-two-text11')}<br/>
-          {t('jumbotron-two-text12')}<br/>
-        </p>
-      </Container>
-    </Jumbo>
+      <Jumbo fluid className='jumbo'>
+        <div className='overlay'> </div>
+        <Container fluid className='container-fluid'>
+          <h2>{t('jumbotron-two-1')}</h2>
+          <h3>{t('jumbotron-two-2')}</h3>
+          <p>
+            {t('jumbotron-two-text1')}<br />
+            {t('jumbotron-two-text2')}<br />
+            {t('jumbotron-two-text3')}<br />
+            {t('jumbotron-two-text4')}<br />
+            {t('jumbotron-two-text5')}<br />
+            {t('jumbotron-two-text6')}<br />
+            {t('jumbotron-two-text7')}<br />
+            {t('jumbotron-two-text8')}<br />
+            {t('jumbotron-two-text9')}<br />
+            {t('jumbotron-two-text10')}<br />
+            {t('jumbotron-two-text11')}<br />
+            {t('jumbotron-two-text12')}<br />
+          </p>
+        </Container>
+      </Jumbo>
     </Styles>
   );
 }
