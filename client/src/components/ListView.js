@@ -138,6 +138,35 @@ const ListView = ({ products }) => {
                   description === "description_matar_akros" &&
                   <>{t('product-description-23').substring(0, 150)}</>
                 }
+                {
+                  description === "description_beytturk_summer" &&
+                  <>{t('product-description-25').substring(0, 150)}</>
+                }
+                {
+                  description === "description_beytturk_beytepe" &&
+                  <>{t('product-description-26').substring(0, 150)}</>
+                }
+                {
+                  description === "description_beytturk_beytepe_plus" &&
+                  <>{t('product-description-27').substring(0, 150)}</>
+                }
+                {
+                  description === "description_lake_city" &&
+                  <>{t('product-description-28').substring(0, 150)}</>
+                }
+                {
+                  description === "description_beytturk_mia_thermal" &&
+                  <>{t('product-description-29').substring(0, 150)}</>
+                }
+                {
+                  description === "description_beytturk_orman" &&
+                  <>{t('product-description-30').substring(0, 150)}</>
+                }
+                {
+                  description === "description_ritz_carlton" &&
+                  <>{t('product-description-31').substring(0, 150)}</>
+                }
+
                 ...</p>
               <Link to={`/products/${_id}`} className="btn">
                 {t('list-view-1')}
