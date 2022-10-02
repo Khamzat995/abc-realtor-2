@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useProductsContext } from "../context/products_context";
 import ScrollAnimation from "react-animate-on-scroll";
-import { formatPrice } from "../utils/helpers";
+/* import { formatPrice } from "../utils/helpers"; */
 import {
   Loading,
   Error,
@@ -36,6 +36,9 @@ const SingleProductPage = () => {
     products: newProducts,
     fetchSingleProduct,
   } = useProductsContext();
+
+  const relatedProducts = newProducts.filter((prod) => prod.company === product.company);
+
 
   /*useEffect(() => {
     if (error) {
@@ -110,8 +113,6 @@ const SingleProductPage = () => {
                 </p>
               </ScrollAnimation>
             </div>
-
-
 
             <p className="desc">
               {/*{description}*/}
@@ -336,11 +337,9 @@ const SingleProductPage = () => {
         <div className="prefix">
           <ScrollToTop />
           {
-            newProducts.slice(0, 6).map(product => {
-              return product.company === product.company
-                ?
-                <div className="products" >
-                  <Product key={product.id} {...product} />  </div> : null
+            relatedProducts.slice(0, 6).map(product => {
+              return <div className="products" >
+                <Product key={product.id} {...product} />  </div>
             })
           }
         </div>
