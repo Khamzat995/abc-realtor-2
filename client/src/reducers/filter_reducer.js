@@ -110,6 +110,7 @@ const filter_reducer = (state, action) => {
         shipping: false,
         footage: false,
         floor: false,
+        construction: false,
 
       },
     };

@@ -82,6 +82,10 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
+    construction: { // стройка
+      type: String,
+      required: false,
+    },
     colors: [
       { // этаж
         type: String,

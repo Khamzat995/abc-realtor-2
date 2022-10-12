@@ -121,6 +121,12 @@
   "contact-about-text-8": "Tourism",
   "contact-about-text-9": "Istanbul, Turkey",
   "stars-text": "customer reviews",
+  "product-construction-1": "Construction 2023",
+  "product-construction-2": "Construction 2024",
+  "product-construction-3": "Construction 2025",
+  "product-construction-11": "completion of construction 2023",
+  "product-construction-22": "completion of construction 2024",
+  "product-construction-33": "completion of construction 2025",
   "product-span-text1": "Available:",
   "product-span-text2": "property available",
   "product-span-text3": "sold out",
@@ -170,5 +176,5 @@
   "sort-text6": "names (z-a)",
   "cart-page-text": "Choose a property",
   "cart-page-btn-text": "back to real estate",
-  "citizen-price": "*available citizenship"
+  "citizen-price": "*Turkish citizenship available"
 }

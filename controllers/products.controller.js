@@ -30,6 +30,7 @@ module.exports.productsController = {
         images: 1,
         footage: 1,
         floor: 1,
+        construction: 1,
         colors: 1,
         district: 1
       });//.populate("genres", "name");
@@ -60,7 +61,7 @@ module.exports.productsController = {
   },
 
   getProductByCategoryId: async (req, res) => {
-     const { category } = req.params;
+    const { category } = req.params;
     try {
       const products = await Product.find({ category });//.populate("genres", "name");
       return res.json(products);

@@ -69,6 +69,7 @@ const SingleProductPage = () => {
     images,
     footage,
     floor,
+    construction,
     district
   } = product;
 
@@ -105,12 +106,26 @@ const SingleProductPage = () => {
             </h2>
             <Stars stars={stars} reviews={reviews} />
             {/* <h5 className="price">{formatPrice(price)}</h5> */}
-            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-start", width: "100%" }}><h5 className="price">{price}$</h5>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", width: "100%" }}><h5 className="price">{price}$</h5>
               <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 1000}>
                 <p className="citizen-price">
                   {price >= 400000 && <>{t('citizen-price')}</>
+                  }</p>
+                <p className="citizen-price"> {
+                  construction === "2023" &&
+                  <><span>{t('product-construction-11')}</span></>
+                }
+                  {
+                    construction === "2024" &&
+                    <><span>{t('product-construction-22')}</span></>
                   }
+                  {
+                    construction === "2025" &&
+                    <><span>{t('product-construction-33')}</span></>
+                  }
+
                 </p>
+
               </ScrollAnimation>
             </div>
 

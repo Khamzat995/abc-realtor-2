@@ -121,6 +121,12 @@
   "contact-about-text-8": "Туризм",
   "contact-about-text-9": "Стамбул, Турция",
   "stars-text": "отзывов клиентов",
+  "product-construction-1": "Сдача объекта 2023 г.",
+  "product-construction-2": "Сдача объекта 2024 г.",
+  "product-construction-3": "Сдача объекта 2025 г.",
+  "product-construction-11": "*завершение строительства 2023 год",
+  "product-construction-22": "*завершение строительства 2024 год",
+  "product-construction-33": "*завершение строительства 2025 год",
   "product-span-text1": "Доступно:",
   "product-span-text2": "недвижимость в наличии",
   "product-span-text3": "продано",
@@ -170,5 +176,5 @@
   "sort-text6": "наименования (я-a)",
   "cart-page-text": "Выберите недвижимость",
   "cart-page-btn-text": "назад к недвижимости",
-  "citizen-price": "*доступно гражданство"
+  "citizen-price": "*доступно турецкое гражданство"
 }

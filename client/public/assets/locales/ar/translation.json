@@ -121,6 +121,12 @@
   "contact-about-text-8": "السياحة",
   "contact-about-text-9": "اسطنبول ، تركيا",
   "stars-text": "آراء العملاء",
+  "product-construction-1": "ابناء 2023",
+  "product-construction-2": "ابناء 2024",
+  "product-construction-3": "ابناء 2025",
+  "product-construction-11": "الانتهاء من البناء 2023",
+  "product-construction-22": "الانتهاء من البناء 2024",
+  "product-construction-33": "الانتهاء من البناء 2025",
   "product-span-text1": "متوفر:",
   "product-span-text2": "الخاصية متاحة",
   "product-span-text3": "تم بيع الكمية بالكامل",
@@ -170,5 +176,5 @@
   "sort-text6": "أسماء (ي-أ)",
   "cart-page-text": "اختر خاصية",
   "cart-page-btn-text": "عودة إلى العقارات",
-  "citizen-price": "*الجنسية المتاحة"
+  "citizen-price": "الجنسية التركية متاحة"
 }

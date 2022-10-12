@@ -11,7 +11,7 @@ const Footer = () => {
         &copy; {new Date().getFullYear()}
         <span> {t('footer-title')}</span>
       </h5>
-      <h5>{t('footer-text')}</h5>
+      <h5>| {t('footer-text')}</h5>
     </Wrapper>
   );
 };

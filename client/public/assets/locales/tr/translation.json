@@ -121,6 +121,12 @@
   "contact-about-text-8": "Turizm",
   "contact-about-text-9": "İstanbul, Türkiye",
   "stars-text": "müşteri yorumları",
+  "product-construction-1": "Inşaat 2023",
+  "product-construction-2": "Inşaat 2024",
+  "product-construction-3": "Inşaat 2025",
+  "product-construction-11": "inşaatın tamamlanması 2023",
+  "product-construction-22": "inşaatın tamamlanması 2024",
+  "product-construction-33": "inşaatın tamamlanması 2025",
   "product-span-text1": "Mevcut:",
   "product-span-text2": "mülk mevcut",
   "product-span-text3": "satıldı",
@@ -170,5 +176,5 @@
   "sort-text6": "adlar (z-a)",
   "cart-page-text": "Bir özellik seçin",
   "cart-page-btn-text": "emlak alanına dönüş",
-  "citizen-price": "*mevcut vatandaşlık"
+  "citizen-price": "*Türk vatandaşlığı mevcut"
 }
