@@ -31,6 +31,7 @@ ExpiresByType application/font-woff2 "access plus 1 month"
 ExpiresByType application/font-sfnt "access plus 1 month"
 ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
 
+ExpiresByType image/x-icon "access plus 1 month"
 ExpiresByType image/webp "access plus 1 month"
 ExpiresByType image/jpg "access plus 1 month"
 ExpiresByType image/jpeg "access plus 1 month"
@@ -38,9 +39,16 @@ ExpiresByType image/gif "access plus 1 month"
 ExpiresByType image/png "access plus 1 month"
 ExpiresByType text/css "access plus 1 month"
 ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/javascript "access plus 1 month"
 ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType application/x-javascript "access plus 1 month"
 ExpiresByType application/x-shockwave-flash "access plus 1 month"
-ExpiresByType image/x-icon "access plus 1 month"
+#кэшировать html и htm файлы на один день
+ ExpiresByType text/html "access plus 10 day"
+ #кэшировать xml файлы на десять минут
+ ExpiresByType application/xhtml+xml "access plus 50 minutes"
+
 ExpiresDefault "access plus 1 month"
 </IfModule>
 
