@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import ModalImage from "react-modal-image";
 
 const ProductImages = ({ images = [{ url: "" }] }) => {
   const [main, setMain] = useState(images[0]);
   return (
     <Wrapper>
-      <img src={main.url} alt="main" className="main" />
+      {/*  <img src={main.url} alt="🌟Турция🌟  " className="main" /> */}
+      {/* modal */}
+      <ModalImage
+        small={main.url}
+        medium={main.url}
+        alt="🌟Турция🌟"
+      />
+      {/* modal */}
       <div className="gallery">
         {images.map((image, index) => {
           return (
@@ -24,6 +32,9 @@ const ProductImages = ({ images = [{ url: "" }] }) => {
 };
 
 const Wrapper = styled.section`
+.__react_modal_image__modal_content img {
+  max-width: 700px;
+}
   .main {
     height: 800px;
   }
